@@ -32,7 +32,7 @@ func (c Config) Validate() error {
 		err.Add(errors.New("interval cannot be zero"))
 	}
 	if c.HostId == "" {
-		err.Add(errors.New("hostid cannot be empty test"))
+		err.Add(errors.New("hostid cannot be empty, please add host id"))
 	}
 	if c.Metrics == "" {
 		err.Add(errors.New("metrics cannot be empty"))
