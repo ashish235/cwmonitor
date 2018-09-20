@@ -8,8 +8,8 @@ import (
 
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/cloudwatch"
-	"github.com/dedalusj/cwmonitor/monitor"
-	"github.com/dedalusj/cwmonitor/util"
+	"./monitor"
+	"./util"
 	"github.com/urfave/cli"
 
 	log "github.com/sirupsen/logrus"

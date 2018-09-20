@@ -7,8 +7,8 @@ import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/cloudwatch"
 	"github.com/aws/aws-sdk-go/service/cloudwatch/cloudwatchiface"
-	"github.com/dedalusj/cwmonitor/metrics"
-	"github.com/dedalusj/cwmonitor/util"
+	"../metrics"
+	"../util"
 	"github.com/pkg/errors"
 
 	log "github.com/sirupsen/logrus"

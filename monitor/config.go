@@ -5,8 +5,8 @@ import (
 	"time"
 
 	"github.com/aws/aws-sdk-go/service/cloudwatch/cloudwatchiface"
-	"github.com/dedalusj/cwmonitor/metrics"
-	"github.com/dedalusj/cwmonitor/util"
+	"../metrics"
+	"../util"
 	"github.com/pkg/errors"
 
 	log "github.com/sirupsen/logrus"
@@ -32,7 +32,7 @@ func (c Config) Validate() error {
 		err.Add(errors.New("interval cannot be zero"))
 	}
 	if c.HostId == "" {
-		err.Add(errors.New("hostid cannot be empty"))
+		err.Add(errors.New("hostid cannot be empty test"))
 	}
 	if c.Metrics == "" {
 		err.Add(errors.New("metrics cannot be empty"))
